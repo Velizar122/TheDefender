@@ -4,14 +4,18 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public int Health = 1;
+    public Animator animator;
+    public bool Checker = false;
+    public BoxCollider2D myGameObject;
     [SerializeField] public float MoveSpeed=0.001f;
     public int Damage;
+
+
     Rigidbody2D rb;
     Transform Target;
     Vector2 MoveDirection;
-    public Animator animator;
-    public bool Checker=false;
-    public BoxCollider2D myGameObject;
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

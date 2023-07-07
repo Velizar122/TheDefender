@@ -6,64 +6,21 @@ using UnityEngine;
 public class Enemy3 : MonoBehaviour
 {
     public int Health = 1;
-    //[SerializeField] public float MoveSpeed = 0.001f;
     public int Damage;
-   // Rigidbody2D rb;
-    //Transform Target;
-    //Vector2 MoveDirection;
     public Animator animator;
     public bool Checker = false;
     public BoxCollider2D myGameObject;
+
     private float startTime;
-    //public float Speed = 0.1f;
+
+
     private void Awake()
     {
-        //rb = GetComponent<Rigidbody2D>();
     }
     private void Start()
     {
         startTime = Time.time;
-        //Target = GameObject.Find("Earth").transform;
     }
-    //private void Update()
-    //{
-    //    //float distance = Vector3.Distance(Target.position, transform.position);
-    //    //if (Target)
-    //    //{
-
-    //    //    Vector3 direction = (Target.position - transform.position).normalized;
-    //    //    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
-    //    //    rb.rotation = angle;
-    //    //    transform.up = direction;
-    //    //    MoveDirection = direction;
-    //    //    //RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, Rayrange, obstacleLayer);
-    //    //    //Debug.DrawRay(transform.position, direction,Color.green);
-    //    //    //if (hit.collider != null)
-    //    //    //{
-    //    //    //    Debug.Log("daaaa");
-    //    //    //    transform.Translate(Vector3.left *Speed* Time.deltaTime);
-    //    //    //}
-    //    //    //else
-    //    //    //{
-    //    //    //    Debug.Log("No obstacles detected");
-    //    //    //}
-    //    //    //RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1f);
-    //    //    //Debug.DrawRay(transform.position, direction, Color.green);
-    //    //    //if (hit.collider != null && CompareTag("Enemy"));
-    //    //    //{
-    //    //    //    Debug.Log("SSSSSSS");
-    //    //    //    transform.Translate(Vector3.left * Time.deltaTime);
-    //    //    //}
-    //    //}
-
-    //}
-    //private void FixedUpdate()
-    //{
-    //    if (Target)
-    //    {
-    //        rb.velocity = new Vector2(MoveDirection.x, MoveDirection.y) * MoveSpeed;
-    //    }
-    //}
     private void Update()
     {
         float elapsedTime = Time.time - startTime;
@@ -131,29 +88,4 @@ public class Enemy3 : MonoBehaviour
             }
         }
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-    //    Enemy2 enemy2 = collision.gameObject.GetComponent<Enemy2>();
-    //        if (enemy | enemy2 != null)
-    //        {
-    //            MoveSpeed = 0.1f;
-    //            transform.Translate(Vector2.left * Speed * Time.deltaTime);
-    //        }
-    //}
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-    //    Enemy2 enemy2 = collision.gameObject.GetComponent<Enemy2>();
-    //    if (enemy | enemy2 != null)
-    //    {
-    //        MoveSpeed = 0.1f;
-    //        transform.Translate(Vector2.left * Speed * Time.deltaTime);
-    //    }
-    //}
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    MoveSpeed = 0.5f;
-    //}
-
 }

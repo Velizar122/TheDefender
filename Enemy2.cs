@@ -5,22 +5,25 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Enemy2 : MonoBehaviour
 {
-    public int Health = 1;
     [SerializeField] public float MoveSpeed = 0.001f;
-    Rigidbody2D rb;
-    Transform Target;
-    Vector2 MoveDirection;
+    public int Health = 1;
     public Transform Object;
     public int DamageOnCollide;
     public Animator animator;
     public bool Checker = false;
     public BoxCollider2D myGameObject;
     public float speed = 2f;
-    public float radius ;
-    private float angle;
+    public float radius;
     public float DefaultMoveSpeed;
     public Transform CenterPoint;
-    private Vector3 zAxis = new Vector3(0, 0, 1);
+
+    Rigidbody2D rb;
+    Transform Target;
+    Vector2 MoveDirection;
+    float angle;
+    Vector3 zAxis = new Vector3(0, 0, 1);
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

@@ -12,7 +12,6 @@ public class Bullet : MonoBehaviour
         Earth earth = collision.gameObject.GetComponent<Earth>();
         if (earth != null)
         {
-            // Deal damage to the enemy
             earth.TakeDamage(Damage);
             Die();
         }

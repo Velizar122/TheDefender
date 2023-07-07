@@ -13,6 +13,8 @@ public class Earth : MonoBehaviour
     public Scored2 scored2;
     public Scored3 scored3; 
     public HealthText healthtxt;
+
+
     private void Start()
     {
         healthtxt.Health = currentHealth;
@@ -37,7 +39,6 @@ public class Earth : MonoBehaviour
     }
     public void Die()
     {
-        // Add any death logic here
         Destroy(gameObject);
     }
     public void GameOver()

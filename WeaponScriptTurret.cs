@@ -45,11 +45,6 @@ public class WeaponScriptTurret : MonoBehaviour
         {
             return; 
         }
-
-        //Vector3 direction=Target.position- transform.position;
-        //Quaternion lookRotation = Quaternion.LookRotation(direction);
-        //Vector3 rotation = lookRotation.eulerAngles;
-        //partoToRotate.rotation = Quaternion.Euler(0f,0f,rotation.z) ;
     }
     private void OnDrawGizmosSelected()
     {

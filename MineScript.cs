@@ -6,6 +6,8 @@ using UnityEngine;
 public class MineScript : MonoBehaviour
 {
     private int Damage = 1;
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
             Enemy2 enemy2 = other.gameObject.GetComponent<Enemy2>();

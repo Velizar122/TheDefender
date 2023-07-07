@@ -4,8 +4,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 1f;
     public float radius = 2f;
-    private float angle = 0f; 
     public int damage = 10;
+
+
+    private float angle = 0f;
+
+
     void Update()
     {
 

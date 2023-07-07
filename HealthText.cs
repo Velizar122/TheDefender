@@ -8,6 +8,8 @@ public class HealthText : MonoBehaviour
     public int Health = 0;
     public int MaxHealth=0;
     public Earth earth;
+
+
     private void Start()
     {
     }
