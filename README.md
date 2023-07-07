@@ -1,4 +1,4 @@
-﻿It's a scripts for mobile game and you are playing as the moon, trying to deffend the Earth. 
+The file contains scripts for mobile game and you are playing as the moon, trying to deffend the Earth. 
 This was one of my first games, so the code and the techniques are pretty pour, but i am still very glad i was working on this project.
 I have learned a lot, because of this game and maybe in the future i will continue working on it.
  
