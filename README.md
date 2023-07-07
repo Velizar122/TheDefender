@@ -14,4 +14,12 @@ These are the scripts for the three enemies in the game, they are different and 
 Spawner, Spawner2 and Spawner3 
 These are the scripts that are used to spawn the three different enemies. I couldn't use an array to spawn them because every one of these units spawn from a different spot in the game.
 
+WeaponScriptTurret
+Is not working yet, this is my first idea for defense exept the moon(Player)
+
+Scored,Scored2 and Scored3 
+They are used to store how many ships are destroyed and to be able to use them, as a currency to buy upgrades.
+I could have made one script for all of them, but as i saied it was one of my first games.
+
+The other scripts are used for the UI in the game.
 
